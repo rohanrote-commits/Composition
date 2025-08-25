@@ -2,12 +2,14 @@ package Composition;
 
 public class Mobile implements Screen,Processor,Storage {
 
-    Electronics e;
+    Electronics e = new Electronics();
+
     @Override
     public void setProcessor(String processor) {
         e.processor = processor;
 
     }
+
 
     @Override
     public String getProcessor() {

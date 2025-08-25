@@ -2,7 +2,7 @@ package Composition;
 
 public class Laptop implements Trackpad,keyboard,Storage,Screen,Processor {
 
-    Electronics e;
+    Electronics e = new Electronics();
 
     @Override
     public void setProcessor(String processor) {

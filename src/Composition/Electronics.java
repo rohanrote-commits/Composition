@@ -8,8 +8,11 @@ public class Electronics {
     protected String trackpad;
     protected String storage;
     protected String keyBoard;
+Electronics(){
 
-    public void setTrackpad(String trackpad) {
-        this.trackpad = trackpad;
-    }
+
+}
+//    public void setTrackpad(String trackpad) {
+//        this.trackpad = trackpad;
+//    }
 }

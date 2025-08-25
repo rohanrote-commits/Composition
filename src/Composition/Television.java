@@ -1,7 +1,7 @@
 package Composition;
 
 public class Television implements Screen, Processor{
-    Electronics e;
+    Electronics e = new Electronics();
 
     @Override
     public void setProcessor(String processor) {

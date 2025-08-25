@@ -7,12 +7,12 @@ public class MainComposition {
         mobile.setStorage("Storage");
 
 
+
         Television t = new Television();
         t.setProcessor("Processor");
         t.getProcessor();
                 t.setScreen("Screen");
         t.getProcessor();
-
 
 
     }

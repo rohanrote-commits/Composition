@@ -1,7 +1,7 @@
 package Composition;
 
 public class FeaturePhone implements Screen , Processor,keyboard {
-Electronics e;
+Electronics e = new Electronics();
 
 
     @Override
