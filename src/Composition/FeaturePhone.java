@@ -1,37 +1,37 @@
 package Composition;
 
 public class FeaturePhone implements Screen , Processor,keyboard {
-    String screen;
-    String keyboard;
-    String processor;
+Electronics e;
+
 
     @Override
-    public void setScreen(Screen screen) {
-
-    }
-
-    @Override
-    public String getScreen() {
-        return this.screen;
-    }
-
-    @Override
-    public void setProcessor(Processor processor) {
+    public void setProcessor(String processor) {
 
     }
 
     @Override
     public String getProcessor() {
-        return this.processor;
+        return this.e.processor;
     }
 
     @Override
     public String getkeyboard() {
-        return this.keyboard;
+        return this.e.keyBoard;
     }
 
     @Override
     public void setkeyboard(String keyboard) {
+    this.e.keyBoard = keyboard;
+    }
 
+    @Override
+    public void setScreen(String screen) {
+        this.e.screen = screen;
+
+    }
+
+    @Override
+    public String getScreen() {
+        return this.e.screen;
     }
 }

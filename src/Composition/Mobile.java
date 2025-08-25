@@ -1,37 +1,38 @@
 package Composition;
 
 public class Mobile implements Screen,Processor,Storage {
-    String processor;
-    String screen;
-    String storage;
 
+    Electronics e;
     @Override
-    public void setProcessor(Processor processor) {
+    public void setProcessor(String processor) {
+        e.processor = processor;
 
     }
 
     @Override
     public String getProcessor() {
-        return this.processor;
+        return this.e.processor;
     }
 
     @Override
-    public void setScreen(Screen screen) {
-
+    public void setScreen(String screen) {
+    this.e.screen = screen;
     }
 
     @Override
     public String getScreen() {
-        return this.screen;
+        return e.screen;
     }
+
 
     @Override
     public void setStorage(String s) {
 
+        e.storage = s;
     }
 
     @Override
     public String getStorage() {
-        return this.storage;
+        return this.e.storage;
     }
 }

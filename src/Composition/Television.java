@@ -1,27 +1,26 @@
 package Composition;
 
 public class Television implements Screen, Processor{
-    String screen;
-    String processor;
-
+    Electronics e;
 
     @Override
-    public void setProcessor(Processor processor) {
-
+    public void setProcessor(String processor) {
+      this.e.processor = processor;
     }
 
     @Override
     public String getProcessor() {
-        return this.processor;
+        return this.e.processor;
+
     }
 
     @Override
-    public void setScreen(Screen screen) {
-
+    public void setScreen(String screen) {
+    this.e.screen = screen;
     }
 
     @Override
     public String getScreen() {
-        return this.screen;
+        return this.e.screen;
     }
 }

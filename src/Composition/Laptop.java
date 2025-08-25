@@ -1,40 +1,40 @@
 package Composition;
 
 public class Laptop implements Trackpad,keyboard,Storage,Screen,Processor {
-    String trackpad;
-    String storage;
-    String screen;
-    String processor;
-    String keyboard;
+
+    Electronics e;
 
     @Override
-    public void setProcessor(Processor processor) {
+    public void setProcessor(String processor) {
+   this.e.processor = processor;
 
     }
 
     @Override
     public String getProcessor() {
-        return this.processor;
+        return this.e.processor;
     }
 
     @Override
-    public void setScreen(Screen screen) {
+    public void setScreen(String screen) {
+     this.e.screen = screen;
 
     }
 
     @Override
     public String getScreen() {
-        return this.screen;
+        return this.e.screen;
     }
 
     @Override
     public void setStorage(String s) {
+       this.e.storage = s;
 
     }
 
     @Override
     public String getStorage() {
-        return this.storage;
+        return this.e.storage;
     }
 
     @Override
@@ -44,12 +44,12 @@ public class Laptop implements Trackpad,keyboard,Storage,Screen,Processor {
 
     @Override
     public String getTrackpad() {
-        return this.trackpad;
+        return this.e.trackpad;
     }
 
     @Override
     public String getkeyboard() {
-        return this.keyboard;
+        return this.e.keyBoard;
     }
 
     @Override

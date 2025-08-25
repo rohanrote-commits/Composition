@@ -2,7 +2,8 @@ package Composition;
 
 public interface Processor {
 
-    void setProcessor(Processor processor);
+
+    void setProcessor(String processor);
     String getProcessor();
 
 }

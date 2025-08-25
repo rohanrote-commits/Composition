@@ -1,7 +1,7 @@
 package Composition;
 
 public interface Screen {
-    void setScreen(Screen screen);
-    String  getScreen();
+    void setScreen(String screen);
+    String getScreen();
 
 }
